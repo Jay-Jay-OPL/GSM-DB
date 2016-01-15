@@ -181,12 +181,14 @@ u32 off_on_size = 	sizeof( off_on ) / sizeof( off_on[0] );
 //-
 //	description			elf_path
 //	-----------			---------
-volatile static exit_struct exit_option[5] = {
+volatile static exit_struct exit_option[7] = {
 	{ "PS2 BROWSER          ",	""},
 	{ "mc0:BOOT/BOOT.ELF    ",	"mc0:BOOT/BOOT.ELF\0"},
+	{ "mc0:boot/boot.elf    ",	"mc0:boot/boot.elf\0"},
 	{ "mc0:APPS/BOOT.ELF    ",	"mc0:APPS/BOOT.ELF\0"},
 	{ "mc0:BOOT/HDLOADER.ELF",	"mc0:BOOT/HDLOADER.ELF\0"},
-	{ "mc0:boot/boot.elf    ",	"mc0:boot/boot.elf\0"},
+	{ "mc0:OPL/OPNPS2LD.ELF",	"mc0:OPL/OPNPS2LD.ELF\0"},
+	{ "mc1:OPL/OPNPS2LD.ELF",	"mc1:OPL/OPNPS2LD.ELF\0"},	
 };//ends exit_option definition
 
 u32 exit_option_size = 	sizeof( exit_option ) / sizeof( exit_option[0] );
